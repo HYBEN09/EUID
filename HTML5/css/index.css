@@ -1,3 +1,22 @@
+@import url(/css/normalize.css); /*여백을 없애줌*/
+@import url(./reset.css);
+@import url(./fonts.css);
+@import url(./fontello.css);
+
+/* 하이퍼링크 스타일 */
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+html{
+  font-size: 10px;
+}
+
 body{
-background: yellow;
+background: #fff;
+color:#111;
+font-size: 1.4rem;
+font-weight:400;
+font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
 }
