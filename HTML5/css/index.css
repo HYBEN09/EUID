@@ -33,9 +33,8 @@ font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, '
 }
 /* 헤더 */
 .header{
-  background: yellow;
-  height: 10vh;
-}
+  background:darkblue;
+  color: #fff;}
 /* 비주얼 */
 .visual{
   /* background: pink; */
@@ -46,7 +45,10 @@ font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, '
   background: aqua;
   min-height: 400px;
   display: flex;
+  /* flex-flow : direction,wrap; (속기법) */
   flex-flow: row nowrap;
+  /* justify-content: space-between;
+     padding: 30px; */
   justify-content: space-around;
   padding: 30px 15px;
 }
