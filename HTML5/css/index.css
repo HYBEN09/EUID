@@ -136,12 +136,65 @@ color: #ff0;
 }
 
 .sub-menu{
-  background: skyblue;
   position: absolute;
   top:0;
-  left: 0;
   display: none;
+  top: 47px;
+  white-space: nowrap;
 }
+
+.menu-html{
+  display: block;
+}
+
+.sub-menu li{
+  display: inline-block;
+}
+
+/*아이콘 적용 방법 - fontello.css가서 복사*/
+
+.sub-menu a::before{
+  content: "\f192";
+  font-family: 'fontello';
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sub-menu a:hover::before, .sub-menu a:focus::before {
+  content: '\e800';
+}
+
+.sub-menu a {
+  display: inline-block;
+  padding: 6px 4px;
+}
+
+.sub-menu a:hover, .sub-menu:focus{
+  color: red;
+}
+
+.menu-item:nth-child(-n+3) .sub-menu{
+  left: 0;
+}
+
+.menu-item:nth-child(n+4) .sub-menu{
+  right:0
+}
+
+
+
+
 
 
 /* 비주얼 */
