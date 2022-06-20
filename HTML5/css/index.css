@@ -151,7 +151,7 @@ color: #ff0;
   display: inline-block;
 }
 
-/*아이콘 적용 방법 - fontello.css가서 복사*/
+/* 아이콘 적용 방법 - fontello.css가서 복사 */
 
 .sub-menu a::before{
   content: "\f192";
@@ -194,14 +194,69 @@ color: #ff0;
 
 
 
+/* 비주얼 에니메이션 주기*/
 
-
-
-/* 비주얼 */
-.visual{
-  /* background: pink; */
-  height: 120px;
+@keyframes moveEffect{
+  0%{
+    font-size: 12px;
+    color: rgba(0,0,0,0);
+    transform: translate(0,0);
+    /*margin/padding: 0; */
+  }
+  100%{
+    font-size: 24px;
+    color: rgba(0,0,0,1);
+    transform: translate(400px,75px);
+    /*margin/padding: 75px 0 0 400px; */
+  }
 }
+
+@keyframes fadeEffect{
+  0%{ opacity: 1;}
+  100%{opacity: 0;}
+}
+
+
+.visual-text{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  animation-name: moveEffect;
+  animation-duration: 3000ms;
+  animation-fill-mode: forwards;
+  /* background: rgb(199, 230, 77); */
+  position: absolute;
+  z-index: 10;
+}
+
+.visual{
+  height: 120px;
+  position: relative;
+}
+
+.visual::before, .visual::after{
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  animation-name: fadeEffect;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.visual::before{
+  background-image: url(./images/ani_flower_01.png), url(./images/ani_flower_02.png) ;
+  background-position: 0 -10px, 600px 0;
+}
+
+.visual::after{
+  background-image: url(./images/ani_flower_03.png), url(./images/ani_flower_04.png) ;
+  background-position: 300px -10px, 800px 0;
+  animation-delay: 1000ms;
+}
+
 
 
 /* 메인 콘텐츠 */
