@@ -136,7 +136,6 @@ color: #ff0;
 
 .sub-menu{
   position: absolute;
-  top:0;
   display: none;
   top: 47px;
   white-space: nowrap;
@@ -215,6 +214,10 @@ color: #ff0;
   100%{opacity: 0;}
 }
 
+.visual{
+  height: 120px;
+  position: relative;
+}
 
 .visual-text{
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -224,11 +227,6 @@ color: #ff0;
   /* background: rgb(199, 230, 77); */
   position: absolute;
   z-index: 10;
-}
-
-.visual{
-  height: 120px;
-  position: relative;
 }
 
 .visual::before, .visual::after{
@@ -360,6 +358,32 @@ color: #ff0;
 
 .sign .icon-right-open::before{
   color:coral ;
+}
+
+/* 유효성 검사 배너 */
+.validation{
+  margin-top: 25px;
+}
+
+/* .validation-list{
+  background: #ff0;
+} */
+
+.validation-list li{
+  /* background: pink; */
+  margin-top: 10px;
+}
+
+.validation-list a{
+  /* background: skyblue; */
+  display: block;
+  border: 1px solid #aaa;
+  border-radius: 30px;
+  text-indent: 45px;
+  background: url(./images/validation_icon.png) no-repeat 15px 50%,
+              linear-gradient(to bottom,#ccc,#fff);
+  /* padding: 8px; */
+  line-height: 30px;
 }
 
 
