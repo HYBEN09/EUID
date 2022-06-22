@@ -473,13 +473,70 @@ line-height: 1.5;
   white-space: nowrap;
 }
 
+/* 공지사항 자료실 */
+.board{
+  margin-top: 20px;
+  position: relative;
+  padding-top: 45px;
+}
 
+.board-panel, .board-more{
+  display: none;
+}
 
+.is-active .board-panel, .is-active .board-more{
+  display: block;
+}
 
+.board-tab{
+  position: absolute;
+  top:0;
+  border: 1px solid #aaa;
+  border-radius: 5px 5px 0 0;
+  background: #ccc;
+  color:#666;
+  padding: 5px 15px;
+}
 
+.is-active .board-tab{
+  color:orangered;
+  /* border-color:orangered orangered #fff orangered; */
+  border-color: currentColor currentColor #fff currentColor;
+  background: #fff;
+  z-index: 10;
+}
 
+.notice-tab{
+  left: 0;
+}
 
+.archive-tab{
+  left: 82px;
+}
 
+.board-panel li{
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 10px;
+}
+
+.board-panel a{
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.board-more{
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 8px;
+}
+
+.more::before{
+  color: hsla(110,50%,30%,1);
+}
 
 
 
