@@ -595,10 +595,6 @@ line-height: 1.5;
   margin-bottom: 15px;
 }
 
-
-
-
-
 .news-more{
   position: absolute;
   /* 클릭하는 곳을 넓혀줌 */
@@ -607,8 +603,108 @@ line-height: 1.5;
   padding: 8px;
 }
 
+/*공통 스타일 (클래스 모듈)  */
+.gradient-effect{
+  background: linear-gradient(to bottom,#ccc,#eee);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.spacing-default{
+  padding: 10px;
+}
+
+.accent-color{
+  color:#ed552f;
+}
+
+.shadow-effect{
+  box-shadow: 5px 5px 0 0 #999;
+  border: 1px solid #aaa;
+  display: inline-block;
+}
+
+/* 신규 이벤트와 관련 사이트 */
+
+.event-title,.related-title{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.event{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.event-buttons{
+  height: 18px;
+  overflow: hidden;
+}
+
+/* 클래스 우선순위 고려 */
+/* padding-top은 글자 밀어내기 */
+/*.event-buttons button{
+  border: 0;
+  padding-top: 18px; 
+  background: url(./images/back_forward.png) no-repeat 0 0;
+  width: 19px;
+}*/
+
+.event-button-previous, .event-button-next{
+  border: 0;
+  padding-top: 18px; /*배경 이미지만 남기고 글자 밀어내기*/
+  background: url(./images/back_forward.png) no-repeat 0 0;
+  width: 19px;
+}
+
+/* 이미지에 주어진 길이 만큼 이동 */
+.event-button-next{
+  background-position: -36px 0; 
+}
+
+.event-detail{
+  width: 100%;
+  margin: 10px 0;
+}
+
+.event-brief{
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.related{
+  padding-top: 10px;
+  border-top: 1px solid #aaa;
+}
+
+.related-list{
+  background: #fff;
+  margin-top: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  height: 27px;
+  overflow: hidden;
+  transition: height 200ms, padding-top 200ms, padding-bottom 200ms;
+}
+
+.related-list:hover, .related-list:focus{
+  height: 147px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.related-list a{
+  display: block;
+  line-height: 25px;
+  text-indent: 25px;
+}
 
 
+
+
+
+/* 인기 사이트 */
 
 
 
