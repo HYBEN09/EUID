@@ -121,10 +121,9 @@ body{
 .button--burger{
   position: absolute;
   right: var(--spacing-medium);
-  top: 3rem;
-  width:48px;
-  height: 48px;
-  background: blue;
+  top: 3.5rem;
+  width:2rem;
+  height: 2rem;
   
 }
 
@@ -132,8 +131,9 @@ body{
   width: 100%;
   height: 20%;
   background: var(--white);
-  border-radius: 0.25rem;
+  border-radius: 16px;
   left: 0;
+  position: absolute;
 }
 
 .button--burgerBarTop{
