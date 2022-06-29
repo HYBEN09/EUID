@@ -21,12 +21,14 @@
   --accent-twitter: var(--blue);
 
 --spacing-base: 1rem;
---spacing-media: 1.5rem;
+--spacing-medium: 1.5rem;
 --spacing-large:2rem;
 
 --text-small: 0.75rem;    /*12px*/
 --text-regular: 0.875rem; /*14px*/
 --text-base: 1rem;
 --text-medium: 1.125rem; /*18px*/
---text-large: 1.25rem;  /*20px*/  
+--text-large: 1.25rem;  /*20px*/ 
+
+--container-width: 64rem; /*1024px*/
 }
