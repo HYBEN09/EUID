@@ -13,11 +13,20 @@
   --brown: #988574;
   --blue: #6aaee6;
 
+  /* 변수의 재할당 */
   --accent-book: var(--green);
   --accent-news: var(--yellow);
   --accent-board: var(--brown);
   --accent-favorite: var(--orange);
   --accent-twitter: var(--blue);
+
+--spacing-base: 1rem;
+--spacing-media: 1.5rem;
+--spacing-large:2rem;
+
+--text-small: 0.75rem;    /*12px*/
+--text-regular: 0.875rem; /*14px*/
+--text-base: 1rem;
+--text-medium: 1.125rem; /*18px*/
+--text-large: 1.25rem;  /*20px*/  
 }
-
-
