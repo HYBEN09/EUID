@@ -29,7 +29,6 @@ body{
   background: url(/images/webcafe-logo.png) no-repeat 0 0 / 100% ;
 }
 
-
 /* 공통 멤버 서비스 */
 .memberOnly{
   order:-1;
@@ -37,6 +36,43 @@ body{
   flex-flow: row nowrap;
   justify-content: flex-end;
 }
+
+/* 공통 검색폼 */
+.searchForm{
+  margin-top: var(--spacing-base);
+}
+
+/* 공통 버튼 스타일 */
+.button{
+  cursor: pointer;
+  padding: 0.125rem 0.75rem;
+  height: 2rem;
+  border-radius: 4px;
+}
+
+.button--none{
+  border: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.button--fill{
+  border: 0;
+  background: var(--secondary-color);
+  color: var(--white);
+}
+
+.button--outline{
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+
+  background: transparent;
+}
+
+
+
+
+
 
 
 /* 모바일 디바이스 (Mobile Device)*/
