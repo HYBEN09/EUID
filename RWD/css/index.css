@@ -97,11 +97,11 @@ input[type="search"]{
 }
 
 /* 공통 메인 콘텐츠 */
-.main{
+.appMain{
   padding:var(--spacing-md);
 }
 
-.main section, .main article{
+.appMain section, .appMain article{
   min-height: 200px;
   background: #fff;
 }
@@ -119,7 +119,7 @@ input[type="search"]{
   justify-content: center;
 }
 
-.main [class*="__koTitle"]{
+.appMain [class*="__koTitle"]{
   font-size: var(--text-medium);
   font-weight: 700;
 }
@@ -148,6 +148,10 @@ input[type="search"]{
 
 
 /* 공통 추천서 */
+.book{
+
+}
+
 .book__enTitle{
   color: var(--accent-book);
 }
@@ -155,7 +159,7 @@ input[type="search"]{
 
 /* 공통 새소식 */
 .news{
-
+  
 }
 
 .news__enTitle{
@@ -164,7 +168,7 @@ input[type="search"]{
 
 /* 공통 게시판 */
 .board{
-
+  
 }
 
 .board__enTitle{
@@ -173,7 +177,7 @@ color: var(--accent-board);
 
 /* 공통 인기사이트 */
 .favorite{
-
+  
 }
 
 .favorite__enTitle{
@@ -182,6 +186,7 @@ color: var(--accent-board);
 
 /* 공통 트위터 */
 .twitter{
+  grid-area: 9/2/2/13;
 
 }
 
@@ -287,7 +292,7 @@ color: var(--accent-board);
   }
 
   /* 모바일 메인 콘텐츠 */
-  .main{
+  .appMain{
     display: flex;
     flex-flow: column nowrap;
     gap: var(--spacing-md);
@@ -340,6 +345,7 @@ color: var(--accent-board);
   .menu{
     background: var(--secondary-color);
     padding: var(--spacing-xs) var(--spacing-sm);
+    
   }
 
   .menu__list{
@@ -362,6 +368,44 @@ color: var(--accent-board);
   }
 
 
+  /* 데스크탑 메인 콘텐츠 */
+  .appMain{
+    max-width: var(--container-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "news news news news news news news news news news news news"
+                         "book book book book favorite favorite favorite twitter twitter twitter twitter twitter"
+                         "book book book book . board board board board board board board";
+    gap: var(--spacing-regular);
+  }
+
+  /* 데스크탑 추천서적 */
+  .book{
+    /* grid-area: 2/1/4/5; */
+    grid-area:book;
+  }
+  /* 데스크탑 새소식 */
+  .news{
+    /* grid-area: 1/1/2/13; */
+    grid-area:news;
+  }
+  /* 데스크탑 게시판 */
+  .board{
+    /* grid-area: 3/6/4/13; */
+    grid-area:board;
+  }
+  /* 데스크탑 인기사이트 */
+  .favorite{
+    /* grid-area: 2/5/3/8; */
+    grid-area:favorite;
+  }
+  /* 데스트탑 트위터 */
+  .twitter{
+    /* grid-area: 2/8/3/13; */
+    grid-area:twitter;
+  }
 
 }
 
