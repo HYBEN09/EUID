@@ -1,0 +1,32 @@
+.container{
+  background: #ff0;
+}
+
+
+.container-fluid{
+  background: pink;
+}
+
+.row{
+  min-height: 20vh;
+}
+
+.news{
+  background: coral;
+}
+
+.book{
+  background: skyblue;
+}
+
+.board{
+  background: lightgreen;
+}
+
+.favorite{
+  background: silver;
+}
+
+.twitter{
+  background: aqua;
+}
