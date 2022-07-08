@@ -265,16 +265,23 @@ input[type="search"]{
 
 .twitter__userProfile{
   float: right;
-  width: 20%;
+  /* width: 20%; */
+  width: 100px;
+  height: 100px;
   shape-outside: circle(50%);
   text-align: right;
   margin-left: var(--spacing-xs);
+  
 }
 
 .twitter__userProfileImage{
   border: 1px solid var(--primary-color);
   border-radius: 50%;
   vertical-align: top;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /*가로가 긴 이미지*/
+  object-position: 20% 30%;
 }
 
 .twitter__date{
@@ -486,7 +493,7 @@ input[type="search"]{
   .news{
     order: -1;
     width: 100%;
-    62.887875
+
   }
 
   /* 데스크탑 게시판, 인기사이트, 트위터 그룹 */
