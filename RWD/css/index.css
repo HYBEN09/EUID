@@ -265,22 +265,62 @@ color: var(--accent-board);
   margin-top: var(--spacing-base);
 }
 
-.favorite__link::after{
-  content: attr(data-tooltip);
-  color: var(--accent-favorite);
-}
-
-
 
 /* 공통 트위터 */
-.twitter{
+/* .twitter{
   grid-area: 9/2/2/13;
 
-}
+} */
 
 .twitter__enTitle{
   color: var(--accent-twitter);
 }
+
+.twitter__userInfo{
+  display: inline-flex;
+  gap: var(--spacing-xs);
+}
+
+.twitter__userId{
+  color: var(--accent-twitter);
+}
+
+.twitter__userProfile{
+  float: right;
+  width: 20%;
+  shape-outside: circle(50%);
+  text-align: right;
+  margin-left: var(--spacing-xs);
+}
+
+.twitter__userProfile img{
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+  vertical-align: top;
+}
+
+.twitter__date{
+  display: block;
+  text-align: right;
+  margin-top: var(--spacing-xs);
+}
+
+.twitter i{
+  color: var(--accent-twitter);
+}
+
+/* 공통 푸터 */
+.appFooter{
+  background: var(--primary-color);
+  color: var(--white);
+  padding: var(--spacing-md);
+}
+
+.address{
+  margin-bottom: var(--spacing-base);
+}
+
+
 
 /* 320px 이하 디바이스  */
 @media (max-width:319px){
@@ -288,7 +328,6 @@ color: var(--accent-board);
     display: block;
     padding-left: 1.25rem;
   }
-  
 }
 
 
@@ -391,7 +430,23 @@ color: var(--accent-board);
     gap: var(--spacing-md);
   }
 
+  /* 모바일 인기사이트 */
+  .favorite__link::after{
+    content: attr(data-tooltip);
+    color: var(--accent-favorite);
+  }
+  
 
+  /* 모바일 트위터 */
+  .twitter__userProfile{
+    max-width: 6.25rem;
+  }
+
+  /* 모바일 푸터 */
+  .address{
+    display: flex;
+    flex-flow: column nowrap;
+  }
 
 }
 
@@ -495,6 +550,11 @@ color: var(--accent-board);
   .twitter{
     /* grid-area: 2/8/3/13; */
     grid-area:twitter;
+  }
+
+  /* 데스크탑 푸터 */
+  .appFooter{
+    text-align: center;
   }
 
 }
