@@ -32,6 +32,8 @@
 --text-base: 1rem;
 --text-medium: 1.125rem; /*18px*/
 --text-large: 1.25rem;  /*20px*/ 
+--text-xlarge:1.5rem;
+
 
 --container-width: 64rem; /*1024px*/
 }
